@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.6.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
@@ -27,10 +27,10 @@ sed -i -e '/^IMG_PREFIX:=/i BUILD_DATE := $(shell date +%Y%m%d)' \
 # sed -i 's/reg = <0x5c0000 0x7000000>;/reg = <0x5c0000 0x7a40000>;/' target/linux/mediatek/dts/mt7981b-cudy-tr3000-v1-ubootmod.dts
 
 # Add OpenClash Meta
-mkdir -p files/etc/openclash/core
+# mkdir -p files/etc/openclash/core
 
-wget -qO "clash_meta.tar.gz" "https://raw.githubusercontent.com/vernesong/OpenClash/core/master/meta/clash-linux-arm64.tar.gz"
-tar -zxvf "clash_meta.tar.gz" -C files/etc/openclash/core/
-mv files/etc/openclash/core/clash files/etc/openclash/core/clash_meta
-chmod +x files/etc/openclash/core/clash_meta
-rm -f "clash_meta.tar.gz"
+# wget -qO "clash_meta.tar.gz" "https://raw.githubusercontent.com/vernesong/OpenClash/core/master/meta/clash-linux-arm64.tar.gz"
+# tar -zxvf "clash_meta.tar.gz" -C files/etc/openclash/core/
+# mv files/etc/openclash/core/clash files/etc/openclash/core/clash_meta
+# chmod +x files/etc/openclash/core/clash_meta
+# rm -f "clash_meta.tar.gz"
