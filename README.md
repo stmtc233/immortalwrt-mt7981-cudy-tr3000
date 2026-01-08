@@ -1,3 +1,12 @@
+
+## 与上游区别
+
+* 删除openclash
+
+* 增加一些依赖
+
+---
+
 [定制教程](https://xiabee.eu.org/customize.html) | [刷写教程](https://xiabee.eu.org/install.html)
 
 <div align=center>
